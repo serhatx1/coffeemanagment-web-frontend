@@ -3,15 +3,17 @@ import logo from "../img/logo.png"
 export const Navbar = () => {
   return (
     <div className='NavbarContainer'>
+      <a href="/">
        <img className='logo' src={logo} alt="" />
+       </a>
         <div className='Middle'>
-        <p className='newCoffee'>Create New Coffee</p>
-        <p className='newCoffee'>Check Orders</p>
-        <p className='newCoffee'>Check Stocks</p>
+        <a href='/coffee/create' className='newCoffee'>Create New Coffee</a>
+        <a href='/coffee/order' className='newCoffee'>Check Orders</a>
+        <a className='newCoffee'>Check Stocks</a>
         </div>
-        <p className='bug'>
+        <a className='bug newCoffee'>
             Report a bug
-        </p>
+        </a>
 
 
     </div>
